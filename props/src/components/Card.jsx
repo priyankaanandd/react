@@ -1,0 +1,23 @@
+import React from 'react'
+
+//props are objects that are initially empty
+//but then we pass in props 
+
+
+
+const Card = (props) => {
+    // console.log(props.channel)
+    //props ek obj hai
+  return (
+
+<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">{props.channel}</h5>
+<h6> {props.btnText}</h6>
+<p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+</a>
+
+  )
+}
+
+export default Card
